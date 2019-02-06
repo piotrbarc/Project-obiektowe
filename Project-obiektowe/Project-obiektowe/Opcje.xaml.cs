@@ -23,5 +23,18 @@ namespace Project_obiektowe
 		{
 			InitializeComponent();
 		}
+
+		// back to game panel
+		private void Button_Click(object sender, RoutedEventArgs e)
+		{
+			Startowa start = new Startowa();
+			this.Close();
+			start.Show();
+		}
+
+		private void Button_Click_1(object sender, RoutedEventArgs e)
+		{
+
+		}
 	}
 }

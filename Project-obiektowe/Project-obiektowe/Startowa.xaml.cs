@@ -28,7 +28,8 @@ namespace Project_obiektowe
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
 
-			Opcje xyz = new Opcje();
+		//	Project_obiektowe.MainWindow xyz = new Project_obiektowe.MainWindow();
+			//	xyz.Show();
 
 
 
@@ -37,14 +38,18 @@ namespace Project_obiektowe
 		// button - opcje
 		private void Button_Click_1(object sender, RoutedEventArgs e)
 		{
-
+			// open panel with options 
+			Opcje opcje = new Opcje();
+			this.Close();
+			opcje.Show();
+				
 		}
 
 		// button - wyjście
 		private void Button_Click_2(object sender, RoutedEventArgs e)
 		{
 
-			Close();
+			this.Close();
 		}
 	}
 }

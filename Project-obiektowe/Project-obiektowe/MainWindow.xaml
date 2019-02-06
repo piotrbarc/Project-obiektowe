@@ -5,13 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Project_obiektowe"
         mc:Ignorable="d"
-        Title="MainWindow" Height="532.71" Width="1036.916">
-	<Button Margin="352,135,405.4,31.2">
-		<StackPanel>
-			<Image Source="img/1.jpg" Height="344" Width="272" />
+        Title="MainWindow" Height="532.71" Width="1046.453" >
+	<Window.Background>
+		<ImageBrush ImageSource="images/Kosmos.png"></ImageBrush>
+	</Window.Background>
 
-		</StackPanel>
-	</Button>
+	<Grid>
+		<Button  HorizontalAlignment="Right" Margin="0,94,269.4,0" VerticalAlignment="Top" Width="425" Click="Button_Click" Height="316" BorderBrush="Transparent" Background="{x:Null}">
+			<Image Source="images/play1.png" Height="303" Width="428" RenderTransformOrigin="0.495,0.511">
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform AngleX="-0.715"/>
+						<RotateTransform Angle="-0.105"/>
+						<TranslateTransform X="-2.01" Y="0.002"/>
+					</TransformGroup>
+				</Image.RenderTransform>
+			</Image>
+
+		</Button>
+		<Button  HorizontalAlignment="Left" Margin="896,370,0,0" VerticalAlignment="Top" Width="120" Height="104" Click="Button_Click_1">
+			<Button.BorderBrush>
+				<ImageBrush/>
+			</Button.BorderBrush>
+			<Button.Background>
+				<ImageBrush/>
+			</Button.Background>
+
+			<Image Source="images/e5.png"/>
+		</Button>
+	</Grid>
 
 
 </Window>

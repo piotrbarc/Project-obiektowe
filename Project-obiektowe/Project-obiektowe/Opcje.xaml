@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:Project_obiektowe"
         mc:Ignorable="d"
         Title="Opcje" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+	<Grid>
+		<Button Content="Button" HorizontalAlignment="Left" Margin="10,327,0,0" VerticalAlignment="Top" Width="168" Height="54" Click="Button_Click"/>
+
+	</Grid>
 </Window>

@@ -108,5 +108,31 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\1.jpg" />
+    <Resource Include="images\doStartu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Kosmos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\play.png" />
+    <Resource Include="images\play1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\exit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\exit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\exit2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\e3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\e5.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

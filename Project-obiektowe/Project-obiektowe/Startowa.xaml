@@ -19,7 +19,7 @@
 				<GradientStop Color="#FFBF1515" Offset="1"/>
 			</LinearGradientBrush>
 		</Grid.Background>
-		<Button Content="GRAJ" HorizontalAlignment="Left" Margin="99.2,133,0,0" VerticalAlignment="Top" Width="199" Height="90" Click="Button_Click" FontSize="48" FontWeight="Bold" FontFamily="Showcard Gothic" Grid.Column="2">
+		<Button Content="GRAJ" HorizontalAlignment="Left" Margin="78.2,89,0,0" VerticalAlignment="Top" Width="220" Height="134" Click="Button_Click" FontSize="48" FontWeight="Bold" FontFamily="Showcard Gothic" Grid.Column="2">
 			<Button.Background>
 				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
 					<GradientStop Color="Black" Offset="0"/>
@@ -27,13 +27,15 @@
 				</LinearGradientBrush>
 			</Button.Background>
 		</Button>
-		<Button Content="Wyjscie" HorizontalAlignment="Left" Margin="138.2,305,0,0" VerticalAlignment="Top" Width="120" Height="57" Click="Button_Click_2" FontSize="20" FontFamily="Sitka Subheading" BorderBrush="#FF711010" Foreground="#FF4F7C14" Grid.Column="2">
+		<Button  HorizontalAlignment="Center" Margin="505.2,331,0,0" VerticalAlignment="Top" Width="82" Height="79" Click="Button_Click_2" FontSize="20" FontFamily="Sitka Subheading" Grid.Column="2">
+			<Button.BorderBrush>
+				<ImageBrush/>
+			</Button.BorderBrush>
 			<Button.Background>
-				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-					<GradientStop Color="#FF1D2F09" Offset="0.038"/>
-					<GradientStop Color="#FF914104" Offset="1"/>
-				</LinearGradientBrush>
+				<ImageBrush/>
 			</Button.Background>
+			<Image Source="images/e3.png"/>
+
 		</Button>
 		<Button Content="Opcje" HorizontalAlignment="Left" Margin="138.2,243,0,0" VerticalAlignment="Top" Width="120" Height="57" Click="Button_Click_1" FontSize="20" FontFamily="Sitka Subheading" BorderBrush="#FF711010" Foreground="#FF4F7C14" Grid.Column="2">
 			<Button.Background>
@@ -43,6 +45,7 @@
 				</LinearGradientBrush>
 			</Button.Background>
 		</Button>
+		<Label Content="Wyjście" Grid.Column="2" HorizontalAlignment="Left" Margin="514.2,313,0,0" VerticalAlignment="Top" Height="31" Width="75"/>
 
 	</Grid>
 </Window>
