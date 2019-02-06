@@ -10,24 +10,41 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Project_obiektowe
 {
 	/// <summary>
-	/// Interaction logic for MainWindow.xaml
+	/// Interaction logic for Startowa.xaml
 	/// </summary>
-	public partial class MainWindow : Window
+	public partial class Startowa : Window
 	{
-		public MainWindow()
+		public Startowa()
 		{
 			InitializeComponent();
 		}
-		// button - start
+
+		// button - GRAJ 
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
-			
+
+			Opcje xyz = new Opcje();
+
+
+
+		}
+
+		// button - opcje
+		private void Button_Click_1(object sender, RoutedEventArgs e)
+		{
+
+		}
+
+		// button - wyjście
+		private void Button_Click_2(object sender, RoutedEventArgs e)
+		{
+
+			Close();
 		}
 	}
 }
