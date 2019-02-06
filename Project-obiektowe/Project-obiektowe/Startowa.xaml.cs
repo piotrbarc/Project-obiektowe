@@ -28,9 +28,11 @@ namespace Project_obiektowe
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
 
-		//	Project_obiektowe.MainWindow xyz = new Project_obiektowe.MainWindow();
+			//	Project_obiektowe.MainWindow xyz = new Project_obiektowe.MainWindow();
 			//	xyz.Show();
-
+			Gra gra = new Gra();
+			this.Close();
+			gra.Show();
 
 
 		}
@@ -50,6 +52,17 @@ namespace Project_obiektowe
 		{
 
 			this.Close();
+		}
+		
+
+		// textbox - jak grać
+		
+		// button - jak grać
+		private void Button_Click_3(object sender, RoutedEventArgs e)
+		{
+			instrukcja info = new instrukcja();
+			info.Show();
+		
 		}
 	}
 }

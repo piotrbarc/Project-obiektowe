@@ -19,7 +19,7 @@
 				<GradientStop Color="#FFBF1515" Offset="1"/>
 			</LinearGradientBrush>
 		</Grid.Background>
-		<Button Content="GRAJ" HorizontalAlignment="Left" Margin="78.2,89,0,0" VerticalAlignment="Top" Width="220" Height="134" Click="Button_Click" FontSize="48" FontWeight="Bold" FontFamily="Showcard Gothic" Grid.Column="2">
+		<Button Content="GRAJ" HorizontalAlignment="Left" Margin="10,27,0,0" VerticalAlignment="Top" Width="251" Height="131" Click="Button_Click" FontSize="48" FontWeight="Bold" FontFamily="Showcard Gothic" Grid.ColumnSpan="3">
 			<Button.Background>
 				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
 					<GradientStop Color="Black" Offset="0"/>
@@ -37,7 +37,7 @@
 			<Image Source="images/e3.png"/>
 
 		</Button>
-		<Button Content="Opcje" HorizontalAlignment="Left" Margin="138.2,243,0,0" VerticalAlignment="Top" Width="120" Height="57" Click="Button_Click_1" FontSize="20" FontFamily="Sitka Subheading" BorderBrush="#FF711010" Foreground="#FF4F7C14" Grid.Column="2">
+		<Button Content="Opcje" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top" Width="162" Height="68" Click="Button_Click_1" FontSize="20" FontFamily="Sitka Subheading" BorderBrush="#FF711010" Foreground="#FF4F7C14" Grid.ColumnSpan="2">
 			<Button.Background>
 				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
 					<GradientStop Color="#FF1D2F09" Offset="0.038"/>
@@ -46,6 +46,26 @@
 			</Button.Background>
 		</Button>
 		<Label Content="Wyjście" Grid.Column="2" HorizontalAlignment="Left" Margin="514.2,313,0,0" VerticalAlignment="Top" Height="31" Width="75"/>
+		<Image HorizontalAlignment="Left" Height="303" Margin="276.2,5,-234.4,0" VerticalAlignment="Top" Width="555" Source="images/a1.png" RenderTransformOrigin="0.5,0.5" Grid.Column="2" Grid.ColumnSpan="2">
+			<Image.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform ScaleX="-1"/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</Image.RenderTransform>
+		</Image>
+		<Button HorizontalAlignment="Left" Margin="10,331,0,0" VerticalAlignment="Top" Width="92" Height="83" Click="Button_Click_3">
+			<Button.BorderBrush>
+				<ImageBrush/>
+			</Button.BorderBrush>
+			<Button.Background>
+				<ImageBrush/>
+			</Button.Background>
+			<Image Source="images/a3.png" Width="82" Height="105" RenderTransformOrigin="0.639,0.306"></Image>
+		</Button>
+		<Label Content="Jak grać?" HorizontalAlignment="Left" Margin="10,294,0,0" VerticalAlignment="Top" Height="37" Width="104" FontSize="20" FontWeight="Bold" FontStyle="Italic"/>
 
 	</Grid>
 </Window>

@@ -55,9 +55,28 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Gra.xaml.cs">
+      <DependentUpon>Gra.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Instrukcja.xaml.cs">
+      <DependentUpon>Instrukcja.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Startowa.xaml.cs">
       <DependentUpon>Startowa.xaml</DependentUpon>
     </Compile>
+    <Page Include="Gra.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Instrukcja.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -86,11 +105,6 @@
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -98,6 +112,7 @@
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -133,6 +148,24 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\e5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\a1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\a2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\a3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ptaki.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\relaks.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

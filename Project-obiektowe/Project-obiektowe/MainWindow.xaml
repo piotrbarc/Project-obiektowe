@@ -16,9 +16,9 @@
 				<Image.RenderTransform>
 					<TransformGroup>
 						<ScaleTransform/>
-						<SkewTransform AngleX="-0.715"/>
+						<SkewTransform AngleX="-0.715" AngleY="-0.194"/>
 						<RotateTransform Angle="-0.105"/>
-						<TranslateTransform X="-2.01" Y="0.002"/>
+						<TranslateTransform X="-2.002" Y="-0.716"/>
 					</TransformGroup>
 				</Image.RenderTransform>
 			</Image>
