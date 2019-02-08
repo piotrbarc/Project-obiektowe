@@ -28,8 +28,7 @@ namespace Project_obiektowe
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
 
-			//	Project_obiektowe.MainWindow xyz = new Project_obiektowe.MainWindow();
-			//	xyz.Show();
+			
 			Gra gra = new Gra();
 			this.Close();
 			gra.Show();

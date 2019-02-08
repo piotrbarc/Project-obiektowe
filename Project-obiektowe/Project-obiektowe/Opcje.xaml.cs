@@ -54,6 +54,7 @@ namespace Project_obiektowe
 			
 		}
 
+		//button - zmiana piosenki 
 		private void Button_Click_1(object sender, RoutedEventArgs e)
 		{
 		
@@ -63,6 +64,12 @@ namespace Project_obiektowe
 		private void Button_Click_3(object sender, RoutedEventArgs e)
 		{
 			player.Stop();
+		}
+
+		//button - zmiana piosenki
+		private void Button_Click_4(object sender, RoutedEventArgs e)
+		{
+
 		}
 	}
 	
