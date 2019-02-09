@@ -27,6 +27,101 @@ namespace Project_obiektowe
 
 
 
+		// disable random buttons , for both players
+		public void RandomButton()
+		{
+			Random random = new Random();
+			int RandomButton = random.Next(1, 15);
+
+			// each number disables pack of buttons
+			if (RandomButton == 1)
+			{
+				a1.IsEnabled = false;
+				c3.IsEnabled = false;
+			}
+			if (RandomButton == 2)
+			{
+				e3.IsEnabled = false;
+				f3.IsEnabled = false;
+			}
+			if (RandomButton == 3)
+			{
+				a5.IsEnabled = false;
+				g1.IsEnabled = false;
+			}
+			if (RandomButton == 4)
+			{
+				d1.IsEnabled = false;
+				d2.IsEnabled = false;
+			}
+			if (RandomButton == 5)
+			{
+				a3.IsEnabled = false;
+				f5.IsEnabled = false;
+			}
+			if (RandomButton == 6)
+			{
+				d5.IsEnabled = false;
+				d4.IsEnabled = false;
+			}
+			if (RandomButton == 7)
+			{
+				b1.IsEnabled = false;
+				g3.IsEnabled = false;
+			}
+			if (RandomButton == 8)
+			{
+				a4.IsEnabled = false;
+				g4.IsEnabled = false;
+			}
+			if (RandomButton == 9)
+			{
+				
+				d3.IsEnabled = false;
+			}
+			if (RandomButton == 10)
+			{
+				b3.IsEnabled = false;
+				b4.IsEnabled = false;
+				c5.IsEnabled = false;
+			}
+			if (RandomButton == 11)
+			{
+				
+				c1.IsEnabled = false;
+			}
+			if (RandomButton == 12)
+			{
+				e2.IsEnabled = false;
+				f2.IsEnabled = false;
+				g2.IsEnabled = false;
+			}
+			if (RandomButton == 13)
+			{
+				e5.IsEnabled = false;
+				e4.IsEnabled = false;
+				a2.IsEnabled = false;
+			}
+			if (RandomButton == 14)
+			{
+				b2.IsEnabled = false;
+				c2.IsEnabled = false;
+			}
+			if (RandomButton == 15)
+			{
+				g5.IsEnabled = false;
+				f4.IsEnabled = false;
+				f1.IsEnabled = false;
+				e1.IsEnabled = false;
+				b5.IsEnabled = false;
+				c4.IsEnabled = false;
+			}
+
+		}
+
+		
+
+
 
 		bool tura = true;
 		bool end = false;
@@ -392,9 +487,9 @@ namespace Project_obiektowe
 			g4.IsEnabled = false;
 			g5.IsEnabled = false;
 		}
-		
 
-		// button - game fields(30 buttons)
+		int zas = 0;
+		// button - game fields(36 buttons)
 		private void a(object sender, RoutedEventArgs e)
 		{
 			Button kolo = (Button)sender;
@@ -404,13 +499,20 @@ namespace Project_obiektowe
 				tura = false;
 				
 				MarkLabel.Content = "Tura gracza - O";
-
+				zas++;
 			}
 			else if (tura == false)
 			{
 				kolo.Content = "O";
 				tura = true;
 				MarkLabel.Content = "Tura gracza - X";
+				zas++;
+			}
+			// disable random button
+			// one per 4 turns 
+			if (zas % 4 == 0)
+			{
+				RandomButton();
 			}
 
 			kolo.IsEnabled = false;

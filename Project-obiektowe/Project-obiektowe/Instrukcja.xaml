@@ -21,7 +21,7 @@
 			<Image Source="images/x.png"></Image>
 
 		</Button>
-		<TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="383" Margin="24,21,0,0" TextWrapping="Wrap" Text="Test 1,2,3, go go go" VerticalAlignment="Top" Width="249" RenderTransformOrigin="0.5,0.5" TextChanged="TextBox_TextChanged"/>
+		<TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="383" Margin="24,21,0,0" TextWrapping="Wrap" Text="                             &#xD;&#xA;                   Zasady  Gry&#xD;&#xA;Który gracz pierwszy zdobedzie 3 takie same znaki w poziomie ,w pionie lub po ukoie ten wygrywa.&#xD;&#xA;dodatkowo co 4 tury sa losowane pola które odpadaja z gry(chyba ze zostalo wylosowane pole które wczesniej jeden z graczy zaznaczył, wtedy nie robi to zadnej róznicy).&#xD;&#xA;Losowane  pola do wykluczenia sa w liczbie od 1 do 6. &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" VerticalAlignment="Top" Width="249" RenderTransformOrigin="0.5,0.5" TextChanged="TextBox_TextChanged" FontFamily="Showcard Gothic" FontSize="16"/>
 
 	</Grid>
 </Window>
