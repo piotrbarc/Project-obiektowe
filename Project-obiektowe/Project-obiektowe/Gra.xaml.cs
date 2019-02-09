@@ -51,7 +51,7 @@ namespace Project_obiektowe
 		// win conditions
 		public void Win()
 		{
-			// win condition (3 marks in vertical)
+			// win condition (3 marks in vertical) ------------------------------------------------------------------------------------------------------------------------------!
 
 			// 1's column
 			if (a1.Content == a2.Content && a1.Content == a3.Content && a1.IsEnabled == false && a2.IsEnabled == false && a3.IsEnabled == false)
@@ -135,7 +135,7 @@ namespace Project_obiektowe
 
 
 
-			//win condition(3 marks in level)
+			//win condition(3 marks in level) ---------------------------------------------------------------------------------------------------------------------------------------------!
 			// 1 poem
 			if (a1.Content == b1.Content && a1.Content == c1.Content && a1.IsEnabled == false && c1.IsEnabled == false && c3.IsEnabled == false)
 				end = true;
@@ -203,6 +203,118 @@ namespace Project_obiektowe
 				end = true;
 			if (e5.Content == f5.Content && e5.Content == g5.Content && e5.IsEnabled == false && f5.IsEnabled == false && g5.IsEnabled == false)
 				end = true;
+
+
+
+
+
+
+
+
+
+
+			// diagonal --------------------------------------------------------------------------------------------------------------------------------!!!
+
+			// diagonal (on the right)
+			// for a3, b4, c5
+			if (a3.Content == b4.Content && a3.Content == c5.Content && a3.IsEnabled == false && b4.IsEnabled == false && c5.IsEnabled == false)
+				end = true;
+
+			// for a2, b3, c4, d5
+			if (a2.Content == b3.Content && a2.Content == c4.Content && a2.IsEnabled == false && b3.IsEnabled == false && c4.IsEnabled == false)
+				end = true;
+			if (d5.Content == b3.Content && d5.Content == c4.Content && d5.IsEnabled == false && b3.IsEnabled == false && c4.IsEnabled == false)
+				end = true;
+
+			// for a1, b2 , c3, d4, e5
+			if (a1.Content == b2.Content && a1.Content == c3.Content && a1.IsEnabled == false && b2.IsEnabled == false && c3.IsEnabled == false)
+				end = true;
+			if (b2.Content == c3.Content && b2.Content == d4.Content && b2.IsEnabled == false && c3.IsEnabled == false && d4.IsEnabled == false)
+				end = true;
+			if (c3.Content == d4.Content && c3.Content == e5.Content && c3.IsEnabled == false && d4.IsEnabled == false && e5.IsEnabled == false)
+				end = true;
+			// for b1, d2, e3, f4, g5
+			if (b1.Content == c2.Content && b1.Content == d3.Content && b1.IsEnabled == false && c2.IsEnabled == false && d3.IsEnabled == false)
+				end = true;
+			if (c2.Content == d3.Content && c2.Content == e4.Content && c2.IsEnabled == false && d3.IsEnabled == false && e4.IsEnabled == false)
+				end = true;
+			if (d3.Content == e4.Content && d3.Content == f5.Content && d3.IsEnabled == false && e4.IsEnabled == false && f5.IsEnabled == false)
+				end = true;
+
+			// for c1, d2, e3, f4, g5
+			if (c1.Content == d2.Content && c1.Content == e3.Content && c1.IsEnabled == false && d2.IsEnabled == false && e3.IsEnabled == false)
+				end = true;
+			if (d2.Content == e3.Content && d2.Content == f4.Content && d2.IsEnabled == false && e3.IsEnabled == false && f4.IsEnabled == false)
+				end = true;
+			if (e3.Content == f4.Content && e3.Content == g5.Content && e3.IsEnabled == false && f4.IsEnabled == false && g5.IsEnabled == false)
+				end = true;
+
+			// for d1, e2, f3, g4
+			if (d1.Content == e2.Content && d1.Content == f3.Content && d1.IsEnabled == false && e2.IsEnabled == false && f3.IsEnabled == false)
+				end = true;
+			if (e2.Content == f3.Content && e2.Content == g4.Content && e2.IsEnabled == false && f3.IsEnabled == false && g4.IsEnabled == false)
+				end = true;
+
+			// for e1, f2, g3
+			if (e1.Content == f2.Content && e1.Content == g3.Content && e1.IsEnabled == false && f2.IsEnabled == false && g3.IsEnabled == false)
+				end = true;
+
+			// diagonal(on the left)
+
+
+			// for a3, b2 , c1
+			if (a3.Content == b2.Content && a3.Content == c1.Content && a3.IsEnabled == false && b2.IsEnabled == false && c1.IsEnabled == false)
+				end = true;
+
+		// for f4, e5, g3
+			if (e5.Content == f4.Content && e5.Content == g3.Content && e5.IsEnabled == false && f4.IsEnabled == false && g3.IsEnabled == false)
+				end = true;
+
+			// for a4, b3, c2, d1
+			if (a4.Content == b3.Content && a4.Content == c2.Content && a4.IsEnabled == false && b3.IsEnabled == false && c2.IsEnabled == false)
+				end = true;
+			if (b3.Content == c2.Content && b3.Content == d1.Content && b3.IsEnabled == false && c2.IsEnabled == false && d1.IsEnabled == false)
+				end = true;
+
+			// for d5, e4,f3 ,g2
+			if (d5.Content == e4.Content && d5.Content == f3.Content && d5.IsEnabled == false && e4.IsEnabled == false && f3.IsEnabled == false)
+				end = true;
+			if (e4.Content == f3.Content && e4.Content == g2.Content && e4.IsEnabled == false && f3.IsEnabled == false && g2.IsEnabled == false)
+				end = true;
+
+			// for g1, f2, e3, d4, c5
+			if (g1.Content == f2.Content && g1.Content == e3.Content && g1.IsEnabled == false && f2.IsEnabled == false && e3.IsEnabled == false)
+				end = true;
+			if (f2.Content == e3.Content && f2.Content == d4.Content && f2.IsEnabled == false && e3.IsEnabled == false && d4.IsEnabled == false)
+				end = true;
+			if (c5.Content == d4.Content && c5.Content == e3.Content && c5.IsEnabled == false && d4.IsEnabled == false && e3.IsEnabled == false)
+				end = true;
+
+			// for f1, e2, d3, c4, b5
+			if (f1.Content == e2.Content && f1.Content == d3.Content && f1.IsEnabled == false && e2.IsEnabled == false && d3.IsEnabled == false)
+				end = true;
+			if (e2.Content == d3.Content && e2.Content == c4.Content && e2.IsEnabled == false && d3.IsEnabled == false && c4.IsEnabled == false)
+				end = true;
+			if (b5.Content == c4.Content && b5.Content == d3.Content && b5.IsEnabled == false && c4.IsEnabled == false && d3.IsEnabled == false)
+				end = true;
+
+
+			// for a5, b4, c3, d2 e1
+			if (a5.Content == b4.Content && a5.Content == c3.Content && a5.IsEnabled == false && b4.IsEnabled == false && c3.IsEnabled == false)
+				end = true;
+			if (b4.Content == c3.Content && b4.Content == d2.Content && b4.IsEnabled == false && c3.IsEnabled == false && d2.IsEnabled == false)
+				end = true;
+			if (c3.Content == d2.Content && c3.Content == e1.Content && c3.IsEnabled == false && d2.IsEnabled == false && e1.IsEnabled == false)
+				end = true;
+
+
+
+
+
+
+
+
+
 
 
 
