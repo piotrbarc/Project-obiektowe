@@ -31,81 +31,109 @@ namespace Project_obiektowe
 		public void RandomButton()
 		{
 			Random random = new Random();
-			int RandomButton = random.Next(1, 15);
+			int RandomButton = random.Next(2, 15);
 
 			// each number disables pack of buttons
-			if (RandomButton == 1)
-			{
-				a1.IsEnabled = false;
-				c3.IsEnabled = false;
-			}
+			
 			if (RandomButton == 2)
 			{
+				a1.IsEnabled = false;
+				a1.Content = "1";
+				c3.IsEnabled = false;
+				a1.Content = "2";
 				e3.IsEnabled = false;
 				f3.IsEnabled = false;
+				e3.Content = "3";
+				f3.Content = "4";
 			}
 			if (RandomButton == 3)
 			{
 				a5.IsEnabled = false;
 				g1.IsEnabled = false;
+				a5.Content = "5";
+				g1.Content = "6";
 			}
 			if (RandomButton == 4)
 			{
 				d1.IsEnabled = false;
 				d2.IsEnabled = false;
+				d1.Content = "7";
+				d2.Content = "8";
 			}
 			if (RandomButton == 5)
 			{
 				a3.IsEnabled = false;
 				f5.IsEnabled = false;
+				a3.Content = "9";
+				f5.Content = "10";
 			}
 			if (RandomButton == 6)
 			{
 				d5.IsEnabled = false;
 				d4.IsEnabled = false;
+				d5.Content = "11";
+				d4.Content = "12";
 			}
 			if (RandomButton == 7)
 			{
 				b1.IsEnabled = false;
 				g3.IsEnabled = false;
+				b1.Content = "13";
+				g3.Content = "14";
 			}
 			if (RandomButton == 8)
 			{
 				a4.IsEnabled = false;
 				g4.IsEnabled = false;
+				a4.Content = "15";
+				g4.Content = "16";
 			}
 			if (RandomButton == 9)
 			{
 				
 				d3.IsEnabled = false;
+				d3.Content = "17";
 			}
 			if (RandomButton == 10)
 			{
 				b3.IsEnabled = false;
 				b4.IsEnabled = false;
 				c5.IsEnabled = false;
+				b3.Content = "18";
+				b4.Content = "19";
+				c5.Content = "20";
+				
 			}
 			if (RandomButton == 11)
 			{
 				
 				c1.IsEnabled = false;
+				c1.Content = "21";
 			}
 			if (RandomButton == 12)
 			{
 				e2.IsEnabled = false;
 				f2.IsEnabled = false;
 				g2.IsEnabled = false;
+				e2.Content = "22";
+				f2.Content = "23";
+				g2.Content = "24";
 			}
 			if (RandomButton == 13)
 			{
 				e5.IsEnabled = false;
 				e4.IsEnabled = false;
 				a2.IsEnabled = false;
+				e5.Content = "25";
+				e4.Content = "26";
+				a2.Content = "27";
 			}
 			if (RandomButton == 14)
 			{
 				b2.IsEnabled = false;
 				c2.IsEnabled = false;
+				b2.Content = "28";
+				c2.Content = "29";
 			}
 			if (RandomButton == 15)
 			{
@@ -115,6 +143,12 @@ namespace Project_obiektowe
 				e1.IsEnabled = false;
 				b5.IsEnabled = false;
 				c4.IsEnabled = false;
+				g5.Content = "30";
+				f4.Content = "31";
+				f1.Content = "32";
+				e1.Content = "33";
+				b5.Content = "34";
+				c3.Content = "35";
 			}
 
 		}
@@ -131,8 +165,13 @@ namespace Project_obiektowe
 		{
 
 			Startowa start = new Startowa();
-			this.Close();
-			start.Show();
+			
+				this.Close();
+				start.Show();
+		
+
+
+
 		}
 
 
@@ -152,9 +191,13 @@ namespace Project_obiektowe
 		// win conditions
 		public void Win()
 		{
-			// win condition (3 marks in vertical) ------------------------------------------------------------------------------------------------------------------------------!
 
+
+			// win condition (3 marks in vertical) ------------------------------------------------------------------------------------------------------------------------------!
+			Button p = new Button();
 			// 1's column
+			
+			
 			if (a1.Content == a2.Content && a1.Content == a3.Content && a1.IsEnabled == false && a2.IsEnabled == false && a3.IsEnabled == false)
 				end = true;
 			if (a3.Content == a4.Content && a3.Content == a5.Content && a4.IsEnabled == false && a5.IsEnabled == false && a3.IsEnabled == false)
@@ -408,7 +451,7 @@ namespace Project_obiektowe
 			if (c3.Content == d2.Content && c3.Content == e1.Content && c3.IsEnabled == false && d2.IsEnabled == false && e1.IsEnabled == false)
 				end = true;
 
-
+			
 
 
 
@@ -433,12 +476,52 @@ namespace Project_obiektowe
 				DisableButton();
 				if (tura == true)
 					MessageBox.Show("Gracz z 'O' Wygrał !");
-				
+
 				else
 					MessageBox.Show("Gracz z 'X' Wygrał !");
-			
 
 
+
+			}
+			else if (
+			a1.IsEnabled == false &&
+			a2.IsEnabled == false &&
+			a3.IsEnabled == false &&
+			a4.IsEnabled == false &&
+			a5.IsEnabled == false &&
+			b1.IsEnabled == false &&
+			b2.IsEnabled == false &&
+			b3.IsEnabled == false &&
+			b4.IsEnabled == false &&
+			b5.IsEnabled == false &&
+			c1.IsEnabled == false &&
+			c2.IsEnabled == false &&
+			c3.IsEnabled == false &&
+			c4.IsEnabled == false &&
+			c5.IsEnabled == false &&
+			d1.IsEnabled == false &&
+			d2.IsEnabled == false &&
+			d3.IsEnabled == false &&
+			d4.IsEnabled == false &&
+			d5.IsEnabled == false &&
+			e1.IsEnabled == false &&
+			e2.IsEnabled == false &&
+			e3.IsEnabled == false &&
+			e4.IsEnabled == false &&
+			e5.IsEnabled == false &&
+			f1.IsEnabled == false &&
+			f2.IsEnabled == false &&
+			f3.IsEnabled == false &&
+			f4.IsEnabled == false &&
+			f5.IsEnabled == false &&
+			g1.IsEnabled == false &&
+			g2.IsEnabled == false &&
+			g3.IsEnabled == false &&
+			g4.IsEnabled == false &&
+			g5.IsEnabled == false
+			)
+			{
+				MessageBox.Show("Remis ! ");
 			}
 		}
 
