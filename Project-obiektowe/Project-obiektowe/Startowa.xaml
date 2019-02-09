@@ -37,7 +37,7 @@
 			<Image Source="images/e3.png"/>
 
 		</Button>
-		<Button Content="Opcje" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top" Width="162" Height="68" Click="Button_Click_1" FontSize="20" FontFamily="Sitka Subheading" BorderBrush="#FF711010" Foreground="#FF4F7C14" Grid.ColumnSpan="2">
+		<Button Content="Opcje" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top" Width="162" Height="68" Click="Button_Click_1" FontSize="20" FontFamily="Showcard Gothic" BorderBrush="#FF711010" Foreground="#FF4F7C14" Grid.ColumnSpan="2">
 			<Button.Background>
 				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
 					<GradientStop Color="#FF1D2F09" Offset="0.038"/>
@@ -45,7 +45,7 @@
 				</LinearGradientBrush>
 			</Button.Background>
 		</Button>
-		<Label Content="Wyjście" Grid.Column="2" HorizontalAlignment="Left" Margin="514.2,313,0,0" VerticalAlignment="Top" Height="31" Width="75"/>
+		<Label Content="Wyjście" Grid.Column="2" HorizontalAlignment="Left" Margin="514.2,313,0,0" VerticalAlignment="Top" Height="31" Width="75" FontFamily="Showcard Gothic"/>
 		<Image HorizontalAlignment="Left" Height="303" Margin="276.2,5,-234.4,0" VerticalAlignment="Top" Width="555" Source="images/a1.png" RenderTransformOrigin="0.5,0.5" Grid.Column="2" Grid.ColumnSpan="2">
 			<Image.RenderTransform>
 				<TransformGroup>
@@ -65,7 +65,7 @@
 			</Button.Background>
 			<Image Source="images/a3.png" Width="82" Height="105" RenderTransformOrigin="0.639,0.306"></Image>
 		</Button>
-		<Label Content="Jak grać?" HorizontalAlignment="Left" Margin="10,294,0,0" VerticalAlignment="Top" Height="37" Width="104" FontSize="20" FontWeight="Bold" FontStyle="Italic"/>
+		<Label Content="Jak graC ?" HorizontalAlignment="Left" Margin="10,294,0,0" VerticalAlignment="Top" Height="37" Width="104" FontWeight="Bold" FontStyle="Italic" FontFamily="Lucida Calligraphy" FontSize="16"/>
 
 	</Grid>
 </Window>

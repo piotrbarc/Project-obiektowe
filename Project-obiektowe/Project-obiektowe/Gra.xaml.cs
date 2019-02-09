@@ -29,11 +29,17 @@ namespace Project_obiektowe
 
 
 		bool tura = true;
-		
-		
+		bool end = false;
 
-		
-	
+
+		private void Back(object sender, RoutedEventArgs e)
+		{
+
+			Startowa start = new Startowa();
+			this.Close();
+			start.Show();
+		}
+
 
 
 		// button - nowa gra
@@ -45,7 +51,7 @@ namespace Project_obiektowe
 			gra.Show();
 		}
 
-		bool end = false;
+		
 		
 
 		// win conditions
@@ -328,8 +334,17 @@ namespace Project_obiektowe
 
 
 			if (end == true)
-				MessageBox.Show("tralalla");
+			{
+				DisableButton();
+				if (tura == true)
+					MessageBox.Show("Gracz z 'O' Wygrał !");
+				
+				else
+					MessageBox.Show("Gracz z 'X' Wygrał !");
+			
 
+
+			}
 		}
 
 
@@ -337,9 +352,10 @@ namespace Project_obiektowe
 
 
 
-
+		// disable all buttons after win
 		void DisableButton()
 		{
+			
 			a1.IsEnabled = false;
 			a2.IsEnabled = false;
 			a3.IsEnabled = false;
@@ -376,8 +392,9 @@ namespace Project_obiektowe
 			g4.IsEnabled = false;
 			g5.IsEnabled = false;
 		}
+		
 
-		// button - pola gry (30 przyciskow)
+		// button - game fields(30 buttons)
 		private void a(object sender, RoutedEventArgs e)
 		{
 			Button kolo = (Button)sender;
@@ -386,17 +403,20 @@ namespace Project_obiektowe
 				kolo.Content = "X";
 				tura = false;
 				
+				MarkLabel.Content = "Tura gracza - O";
+
 			}
 			else if (tura == false)
 			{
 				kolo.Content = "O";
 				tura = true;
-				
+				MarkLabel.Content = "Tura gracza - X";
 			}
 
 			kolo.IsEnabled = false;
 			Win();
 
+			
 		}
 
 		
