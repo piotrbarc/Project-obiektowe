@@ -59,6 +59,19 @@
 				<ImageBrush/>
 			</Label.Background>
 		</Label>
+		<Label x:Name="nextlab" Content="" HorizontalAlignment="Left" Margin="419,96,0,0" VerticalAlignment="Top" Height="47" Width="420" FontSize="20" Background="{x:Null}" Foreground="#FFC6C8AF" FontFamily="Source Sans Pro Black" Grid.ColumnSpan="2" FontWeight="Bold"/>
+		<Label Content="A" HorizontalAlignment="Left" Margin="368,488,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.302,-3.435" Height="37" Width="51" FontSize="24" Background="{x:Null}" BorderBrush="#FF862828" Foreground="#FFFFB4B4" FontWeight="Bold"/>
+		<Label Content="B" HorizontalAlignment="Left" Margin="446,488,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.302,-3.435" Height="37" Width="51" FontSize="24" Background="{x:Null}" BorderBrush="#FF862828" Foreground="#FFFFB4B4" FontWeight="Bold"/>
+		<Label Content="C" HorizontalAlignment="Left" Margin="529,490,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.302,-3.435" Height="37" Width="51" FontSize="24" Background="{x:Null}" BorderBrush="#FF862828" Foreground="#FFFFB4B4" FontWeight="Bold"/>
+		<Label Content="D" HorizontalAlignment="Left" Margin="24.8,488,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.302,-3.435" Height="37" Width="51" FontSize="24" Background="{x:Null}" BorderBrush="#FF862828" Foreground="#FFFFB4B4" FontWeight="Bold" Grid.Column="1"/>
+		<Label Content="E" HorizontalAlignment="Left" Margin="108.8,488,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.302,-3.435" Height="37" Width="51" FontSize="24" Background="{x:Null}" BorderBrush="#FF862828" Foreground="#FFFFB4B4" FontWeight="Bold" Grid.Column="1"/>
+		<Label Content="F" HorizontalAlignment="Left" Margin="192.8,488,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.302,-3.435" Height="37" Width="51" FontSize="24" Background="{x:Null}" BorderBrush="#FF862828" Foreground="#FFFFB4B4" FontWeight="Bold" Grid.Column="1"/>
+		<Label Content="G" HorizontalAlignment="Left" Margin="276.8,488,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.302,-3.435" Height="37" Width="51" FontSize="24" Background="{x:Null}" BorderBrush="#FF862828" Foreground="#FFFFB4B4" FontWeight="Bold" Grid.Column="1"/>
+		<Label Content="1" HorizontalAlignment="Left" Margin="301,429,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.302,-3.435" Height="37" Width="29" FontSize="24" Background="{x:Null}" BorderBrush="#FF862828" Foreground="#FFFFB4B4" FontWeight="Bold"/>
+		<Label Content="2" HorizontalAlignment="Left" Margin="301,370,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.302,-3.435" Height="37" Width="29" FontSize="24" Background="{x:Null}" BorderBrush="#FF862828" Foreground="#FFFFB4B4" FontWeight="Bold"/>
+		<Label Content="3" HorizontalAlignment="Left" Margin="301,305,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.302,-3.435" Height="37" Width="29" FontSize="24" Background="{x:Null}" BorderBrush="#FF862828" Foreground="#FFFFB4B4" FontWeight="Bold"/>
+		<Label Content="4" HorizontalAlignment="Left" Margin="301,238,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.302,-3.435" Height="37" Width="29" FontSize="24" Background="{x:Null}" BorderBrush="#FF862828" Foreground="#FFFFB4B4" FontWeight="Bold"/>
+		<Label Content="5" HorizontalAlignment="Left" Margin="301,173,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.302,-3.435" Height="37" Width="29" FontSize="24" Background="{x:Null}" BorderBrush="#FF862828" Foreground="#FFFFB4B4" FontWeight="Bold"/>
 	</Grid>
 
 

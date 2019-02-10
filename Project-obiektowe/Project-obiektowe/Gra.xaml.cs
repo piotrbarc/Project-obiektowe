@@ -26,53 +26,89 @@ namespace Project_obiektowe
 		}
 
 
-
-		// disable random buttons , for both players
-		public void RandomButton()
+		int RandomButton{ get; set; }
+		public void Randomdigit()
 		{
 			Random random = new Random();
-			int RandomButton = random.Next(2, 15);
+			RandomButton = random.Next(6, 15);
 
+			if (RandomButton == 6)
+				nextlab.Content = "Za dwie tury zostaną wyłączone pola : D5, D4, A5, G1, A1, E3, F3";
+			if (RandomButton == 7)
+				nextlab.Content = "Za dwie tury zostaną wyłączone pola : B1, G3";
+			if (RandomButton == 8)
+				nextlab.Content = "Za dwie tury zostaną wyłączone pola : A4, G4";
+			if (RandomButton == 9)
+				nextlab.Content = "Za dwie tury zostaną wyłączone pola : D3";
+			if (RandomButton == 10)
+				nextlab.Content = "Za dwie tury zostaną wyłączone pola : B3, B4, C5";
+			if (RandomButton == 11)
+				nextlab.Content = "Za dwie tury zostaną wyłączone pola : C1, D1, D2";
+			if (RandomButton == 12)
+				nextlab.Content = "Za dwie tury zostaną wyłączone pola : E2, F2, G2, A3, F5";
+			if (RandomButton == 13)
+				nextlab.Content = "Za dwie tury zostaną wyłączone pola : E5, E4, A2";
+
+			if (RandomButton == 14)
+				nextlab.Content = "Za dwie tury zostaną wyłączone pola : B2, C2";
+			if (RandomButton == 15)
+				nextlab.Content = "Za dwie tury zostaną wyłączone pola : G5, F4, F1, E1, B5, C3";
+
+		}
+		public void Randomdigit1()
+		{
+			if (RandomButton == 6)
+				nextlab.Content = "Za ture zostaną wyłączone pola : D5, D4, A5, G1, A1, E3, F3";
+			if (RandomButton == 7)
+				nextlab.Content = "Za ture zostaną wyłączone pola : B1, G3";
+			if (RandomButton == 8)
+				nextlab.Content = "Za ture zostaną wyłączone pola : A4, G4";
+			if (RandomButton == 9)
+				nextlab.Content = "Za ture zostaną wyłączone pola : D3";
+			if (RandomButton == 10)
+				nextlab.Content = "Za ture zostaną wyłączone pola : B3, B4, C5";
+			if (RandomButton == 11)
+				nextlab.Content = "Za ture zostaną wyłączone pola : C1, D1, D2";
+			if (RandomButton == 12)
+				nextlab.Content = "Za ture zostaną wyłączone pola : E2, F2, G2, A3, F5";
+			if (RandomButton == 13)
+				nextlab.Content = "Za ture zostaną wyłączone pola : E5, E4, A2";
+
+			if (RandomButton == 14)
+				nextlab.Content = "Za ture zostaną wyłączone pola : B2, C2";
+			if (RandomButton == 15)
+				nextlab.Content = "Za ture zostaną wyłączone pola : G5, F4, F1, E1, B5, C3";
+		}
+		// disable random buttons , for both players
+		public void DisableFields()
+		{
+
+			//Random random = new Random();
+			//	int RandomButton = random.Next(6, 15);
+			//nextlab.Content = "Za ture zostaną wyłączone pola : "
 			// each number disables pack of buttons
 			
-			if (RandomButton == 2)
-			{
-				a1.IsEnabled = false;
-				a1.Content = "1";
-				c3.IsEnabled = false;
-				a1.Content = "2";
-				e3.IsEnabled = false;
-				f3.IsEnabled = false;
-				e3.Content = "3";
-				f3.Content = "4";
-			}
-			if (RandomButton == 3)
-			{
-				a5.IsEnabled = false;
-				g1.IsEnabled = false;
-				a5.Content = "5";
-				g1.Content = "6";
-			}
-			if (RandomButton == 4)
-			{
-				d1.IsEnabled = false;
-				d2.IsEnabled = false;
-				d1.Content = "7";
-				d2.Content = "8";
-			}
-			if (RandomButton == 5)
-			{
-				a3.IsEnabled = false;
-				f5.IsEnabled = false;
-				a3.Content = "9";
-				f5.Content = "10";
-			}
+
+
+
 			if (RandomButton == 6)
 			{
 				d5.IsEnabled = false;
 				d4.IsEnabled = false;
 				d5.Content = "11";
 				d4.Content = "12";
+				a5.IsEnabled = false;
+				g1.IsEnabled = false;
+				a5.Content = "5";
+				g1.Content = "6";
+				a1.IsEnabled = false;
+				a1.Content = "1";
+				c3.IsEnabled = false;
+				
+				e3.IsEnabled = false;
+				f3.IsEnabled = false;
+				e3.Content = "3";
+				f3.Content = "4";
 			}
 			if (RandomButton == 7)
 			{
@@ -109,6 +145,10 @@ namespace Project_obiektowe
 				
 				c1.IsEnabled = false;
 				c1.Content = "21";
+				d1.IsEnabled = false;
+				d2.IsEnabled = false;
+				d1.Content = "7";
+				d2.Content = "8";
 			}
 			if (RandomButton == 12)
 			{
@@ -118,6 +158,10 @@ namespace Project_obiektowe
 				e2.Content = "22";
 				f2.Content = "23";
 				g2.Content = "24";
+				a3.IsEnabled = false;
+				f5.IsEnabled = false;
+				a3.Content = "9";
+				f5.Content = "10";
 			}
 			if (RandomButton == 13)
 			{
@@ -591,11 +635,26 @@ namespace Project_obiektowe
 				MarkLabel.Content = "Tura gracza - X";
 				zas++;
 			}
+			if (zas == 0 || zas == 4 || zas == 8 || zas == 12 || zas == 16 || zas == 20 || zas == 24)
+			{
+				nextlab.Content = "";
+			}
+
+
+			if (zas == 2 || zas == 6 || zas == 10 || zas == 14 || zas == 18 || zas == 22 || zas == 26 )
+			{
+				Randomdigit();
+			}
+
+			if (zas == 3 || zas == 7 || zas == 11 || zas == 15 || zas == 19 || zas == 23 || zas == 27)
+			{
+				Randomdigit1();
+			}
 			// disable random button
 			// one per 4 turns 
 			if (zas % 4 == 0)
 			{
-				RandomButton();
+				DisableFields();
 			}
 
 			kolo.IsEnabled = false;
