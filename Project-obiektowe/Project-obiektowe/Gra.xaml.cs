@@ -750,25 +750,25 @@ namespace Project_obiektowe
 			
 
 			//show which button will be disabled
-			if (zas == 0 || zas == 4 || zas == 8 || zas == 12 || zas == 16 || zas == 20 || zas == 24)
+			if (zas == 0 || zas == 3 || zas == 6 || zas == 9 || zas == 12 || zas == 15 || zas == 18 || zas == 21 || zas == 24)
 			{
 				nextlab.Content = "";
 			}
 
 
-			if (zas == 2 || zas == 6 || zas == 10 || zas == 14 || zas == 18 || zas == 22 || zas == 26 )
+			if (zas == 1 || zas == 5 || zas == 9 || zas == 13 || zas == 17 || zas == 21 || zas == 25)
 			{
 				Randomdigit();
 			}
 			// disable random button
 			// one per 4 turns 
-			if (zas == 3 || zas == 7 || zas == 11 || zas == 15 || zas == 19 || zas == 23 || zas == 27)
+			if (zas == 2 || zas == 6 || zas == 10 || zas == 14 || zas == 18 || zas == 22 || zas == 26)
 			{
 				Randomdigit1();
 			}
 			// disable random button
 			// one per 4 turns 
-			if (zas % 4 == 0)
+			if (zas % 3 == 0)
 			{
 				
 				DisableFields();
