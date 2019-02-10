@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -11,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+
 
 namespace Project_obiektowe
 {
@@ -33,26 +35,80 @@ namespace Project_obiektowe
 			RandomButton = random.Next(6, 15);
 
 			if (RandomButton == 6)
+			{
 				nextlab.Content = "Za dwie tury zostaną wyłączone pola : D5, D4, A5, G1, A1, E3, F3";
+				d5.Background = Brushes.IndianRed;
+				d4.Background = Brushes.IndianRed;
+				a5.Background = Brushes.IndianRed;
+				g1.Background = Brushes.IndianRed;
+				a1.Background = Brushes.IndianRed;
+				e3.Background = Brushes.IndianRed;
+				f3.Background = Brushes.IndianRed;
+			}
 			if (RandomButton == 7)
+			{
 				nextlab.Content = "Za dwie tury zostaną wyłączone pola : B1, G3";
+				b1.Background = Brushes.IndianRed;
+				g3.Background = Brushes.IndianRed;
+			}
 			if (RandomButton == 8)
+			{
 				nextlab.Content = "Za dwie tury zostaną wyłączone pola : A4, G4";
+				a4.Background = Brushes.IndianRed;
+				g4.Background = Brushes.IndianRed;
+			}
 			if (RandomButton == 9)
+			{
 				nextlab.Content = "Za dwie tury zostaną wyłączone pola : D3";
+				d3.Background = Brushes.IndianRed;
+			}
 			if (RandomButton == 10)
+			{
 				nextlab.Content = "Za dwie tury zostaną wyłączone pola : B3, B4, C5";
+				b3.Background = Brushes.IndianRed;
+				b4.Background = Brushes.IndianRed;
+				c5.Background = Brushes.IndianRed;
+			}
 			if (RandomButton == 11)
+			{
 				nextlab.Content = "Za dwie tury zostaną wyłączone pola : C1, D1, D2";
+				c1.Background = Brushes.IndianRed;
+				d1.Background = Brushes.IndianRed;
+				d2.Background = Brushes.IndianRed;
+			}
 			if (RandomButton == 12)
+			{
 				nextlab.Content = "Za dwie tury zostaną wyłączone pola : E2, F2, G2, A3, F5";
+				e2.Background = Brushes.IndianRed;
+				f2.Background = Brushes.IndianRed;
+				g2.Background = Brushes.IndianRed;
+				a3.Background = Brushes.IndianRed;
+				f5.Background = Brushes.IndianRed;
+			}
 			if (RandomButton == 13)
+			{
 				nextlab.Content = "Za dwie tury zostaną wyłączone pola : E5, E4, A2";
+				e5.Background = Brushes.IndianRed;
+				e4.Background = Brushes.IndianRed;
+				a2.Background = Brushes.IndianRed;
+			}
 
 			if (RandomButton == 14)
+			{
 				nextlab.Content = "Za dwie tury zostaną wyłączone pola : B2, C2";
+				b2.Background = Brushes.IndianRed;
+				c2.Background = Brushes.IndianRed;
+			}
 			if (RandomButton == 15)
+			{
 				nextlab.Content = "Za dwie tury zostaną wyłączone pola : G5, F4, F1, E1, B5, C3";
+				g5.Background = Brushes.IndianRed;
+				f4.Background = Brushes.IndianRed;
+				f1.Background = Brushes.IndianRed;
+				e1.Background = Brushes.IndianRed;
+				b5.Background = Brushes.IndianRed;
+				c3.Background = Brushes.IndianRed;
+			}
 
 		}
 		public void Randomdigit1()
@@ -79,20 +135,24 @@ namespace Project_obiektowe
 			if (RandomButton == 15)
 				nextlab.Content = "Za ture zostaną wyłączone pola : G5, F4, F1, E1, B5, C3";
 		}
+
+
+
+
+
 		// disable random buttons , for both players
 		public void DisableFields()
 		{
 
-			//Random random = new Random();
-			//	int RandomButton = random.Next(6, 15);
-			//nextlab.Content = "Za ture zostaną wyłączone pola : "
-			// each number disables pack of buttons
+		
 			
 
 
 
 			if (RandomButton == 6)
 			{
+				
+				d5.Visibility = Visibility.Collapsed;
 				d5.IsEnabled = false;
 				d4.IsEnabled = false;
 				d5.Content = "11";
@@ -103,12 +163,22 @@ namespace Project_obiektowe
 				g1.Content = "6";
 				a1.IsEnabled = false;
 				a1.Content = "1";
-				c3.IsEnabled = false;
+				
 				
 				e3.IsEnabled = false;
 				f3.IsEnabled = false;
 				e3.Content = "3";
 				f3.Content = "4";
+				a1.Visibility = Visibility.Collapsed;
+				d5.Visibility = Visibility.Collapsed;
+				d4.Visibility = Visibility.Collapsed;
+				a5.Visibility = Visibility.Collapsed;
+				g1.Visibility = Visibility.Collapsed;
+				a1.Visibility = Visibility.Collapsed;
+				e3.Visibility = Visibility.Collapsed;
+				f3.Visibility = Visibility.Collapsed;
+
+
 			}
 			if (RandomButton == 7)
 			{
@@ -116,6 +186,8 @@ namespace Project_obiektowe
 				g3.IsEnabled = false;
 				b1.Content = "13";
 				g3.Content = "14";
+				b1.Visibility = Visibility.Collapsed;
+				g3.Visibility = Visibility.Collapsed;
 			}
 			if (RandomButton == 8)
 			{
@@ -123,12 +195,15 @@ namespace Project_obiektowe
 				g4.IsEnabled = false;
 				a4.Content = "15";
 				g4.Content = "16";
+				a4.Visibility = Visibility.Collapsed;
+				g4.Visibility = Visibility.Collapsed;
 			}
 			if (RandomButton == 9)
 			{
 				
 				d3.IsEnabled = false;
 				d3.Content = "17";
+				d3.Visibility = Visibility.Collapsed;
 			}
 			if (RandomButton == 10)
 			{
@@ -138,7 +213,10 @@ namespace Project_obiektowe
 				b3.Content = "18";
 				b4.Content = "19";
 				c5.Content = "20";
-				
+				b3.Visibility = Visibility.Collapsed;
+				b4.Visibility = Visibility.Collapsed;
+				c5.Visibility = Visibility.Collapsed;
+
 			}
 			if (RandomButton == 11)
 			{
@@ -149,6 +227,9 @@ namespace Project_obiektowe
 				d2.IsEnabled = false;
 				d1.Content = "7";
 				d2.Content = "8";
+				c1.Visibility = Visibility.Collapsed;
+				d1.Visibility = Visibility.Collapsed;
+				d2.Visibility = Visibility.Collapsed;
 			}
 			if (RandomButton == 12)
 			{
@@ -162,6 +243,11 @@ namespace Project_obiektowe
 				f5.IsEnabled = false;
 				a3.Content = "9";
 				f5.Content = "10";
+				e2.Visibility = Visibility.Collapsed;
+				f2.Visibility = Visibility.Collapsed;
+				g2.Visibility = Visibility.Collapsed;
+				a3.Visibility = Visibility.Collapsed;
+				f5.Visibility = Visibility.Collapsed;
 			}
 			if (RandomButton == 13)
 			{
@@ -171,6 +257,9 @@ namespace Project_obiektowe
 				e5.Content = "25";
 				e4.Content = "26";
 				a2.Content = "27";
+				e5.Visibility = Visibility.Collapsed;
+				e4.Visibility = Visibility.Collapsed;
+				a2.Visibility = Visibility.Collapsed;
 			}
 			if (RandomButton == 14)
 			{
@@ -178,6 +267,8 @@ namespace Project_obiektowe
 				c2.IsEnabled = false;
 				b2.Content = "28";
 				c2.Content = "29";
+				b2.Visibility = Visibility.Collapsed;
+				c2.Visibility = Visibility.Collapsed;
 			}
 			if (RandomButton == 15)
 			{
@@ -193,6 +284,12 @@ namespace Project_obiektowe
 				e1.Content = "33";
 				b5.Content = "34";
 				c3.Content = "35";
+				g5.Visibility = Visibility.Collapsed;
+				f4.Visibility = Visibility.Collapsed;
+				f1.Visibility = Visibility.Collapsed;
+				e1.Visibility = Visibility.Collapsed;
+				b5.Visibility = Visibility.Collapsed;
+				c3.Visibility = Visibility.Collapsed;
 			}
 
 		}
@@ -615,26 +712,44 @@ namespace Project_obiektowe
 			g5.IsEnabled = false;
 		}
 
+
+		
+
 		int zas = 0;
 		// button - game fields(36 buttons)
 		private void a(object sender, RoutedEventArgs e)
 		{
+			// sounds after click button 
+			SystemSounds.Asterisk.Play();
+
+			// display X or O depends who has turn 
 			Button kolo = (Button)sender;
 			if (tura == true)
 			{
+			 // for Player  with "x" 
+				kolo.Foreground = Brushes.Red;
+				
 				kolo.Content = "X";
 				tura = false;
 				
 				MarkLabel.Content = "Tura gracza - O";
 				zas++;
+				
+
+
 			}
 			else if (tura == false)
 			{
+				// for Player with "O"
+				kolo.Foreground = Brushes.Blue;
 				kolo.Content = "O";
 				tura = true;
 				MarkLabel.Content = "Tura gracza - X";
 				zas++;
 			}
+			
+
+			//show which button will be disabled
 			if (zas == 0 || zas == 4 || zas == 8 || zas == 12 || zas == 16 || zas == 20 || zas == 24)
 			{
 				nextlab.Content = "";
@@ -645,7 +760,8 @@ namespace Project_obiektowe
 			{
 				Randomdigit();
 			}
-
+			// disable random button
+			// one per 4 turns 
 			if (zas == 3 || zas == 7 || zas == 11 || zas == 15 || zas == 19 || zas == 23 || zas == 27)
 			{
 				Randomdigit1();
@@ -654,7 +770,9 @@ namespace Project_obiektowe
 			// one per 4 turns 
 			if (zas % 4 == 0)
 			{
+				
 				DisableFields();
+		
 			}
 
 			kolo.IsEnabled = false;
