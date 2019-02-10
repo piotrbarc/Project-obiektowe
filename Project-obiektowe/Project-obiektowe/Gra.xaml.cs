@@ -32,7 +32,7 @@ namespace Project_obiektowe
 		public void Randomdigit()
 		{
 			Random random = new Random();
-			RandomButton = random.Next(6, 15);
+			RandomButton = random.Next(6, 14);
 
 			if (RandomButton == 6)
 			{
@@ -87,17 +87,23 @@ namespace Project_obiektowe
 			}
 			if (RandomButton == 13)
 			{
-				nextlab.Content = "Za dwie tury zostaną wyłączone pola : E5, E4, A2";
+				nextlab.Content = "Za dwie tury zostaną wyłączone pola : E5, E4, A2, E1, B5, C3";
 				e5.Background = Brushes.IndianRed;
 				e4.Background = Brushes.IndianRed;
 				a2.Background = Brushes.IndianRed;
+				e1.Background = Brushes.IndianRed;
+				b5.Background = Brushes.IndianRed;
+				c3.Background = Brushes.IndianRed;
 			}
 
 			if (RandomButton == 14)
 			{
-				nextlab.Content = "Za dwie tury zostaną wyłączone pola : B2, C2";
+				nextlab.Content = "Za dwie tury zostaną wyłączone pola : B2, C2, G5, F4, F1";
 				b2.Background = Brushes.IndianRed;
 				c2.Background = Brushes.IndianRed;
+				g5.Background = Brushes.IndianRed;
+				f4.Background = Brushes.IndianRed;
+				f1.Background = Brushes.IndianRed;
 			}
 			if (RandomButton == 15)
 			{
@@ -128,12 +134,11 @@ namespace Project_obiektowe
 			if (RandomButton == 12)
 				nextlab.Content = "Za ture zostaną wyłączone pola : E2, F2, G2, A3, F5";
 			if (RandomButton == 13)
-				nextlab.Content = "Za ture zostaną wyłączone pola : E5, E4, A2";
+				nextlab.Content = "Za ture zostaną wyłączone pola : E5, E4, A2, E1, B5, C3";
 
 			if (RandomButton == 14)
-				nextlab.Content = "Za ture zostaną wyłączone pola : B2, C2";
-			if (RandomButton == 15)
-				nextlab.Content = "Za ture zostaną wyłączone pola : G5, F4, F1, E1, B5, C3";
+				nextlab.Content = "Za ture zostaną wyłączone pola : B2, C2, G5, F4, F1";
+		
 		}
 
 
@@ -247,6 +252,7 @@ namespace Project_obiektowe
 				f2.Visibility = Visibility.Collapsed;
 				g2.Visibility = Visibility.Collapsed;
 				a3.Visibility = Visibility.Collapsed;
+
 				f5.Visibility = Visibility.Collapsed;
 			}
 			if (RandomButton == 13)
@@ -254,43 +260,43 @@ namespace Project_obiektowe
 				e5.IsEnabled = false;
 				e4.IsEnabled = false;
 				a2.IsEnabled = false;
+				e1.IsEnabled = false;
+				b5.IsEnabled = false;
+				c4.IsEnabled = false;
 				e5.Content = "25";
 				e4.Content = "26";
 				a2.Content = "27";
+				e1.Content = "33";
+				b5.Content = "34";
+				c3.Content = "35";
 				e5.Visibility = Visibility.Collapsed;
 				e4.Visibility = Visibility.Collapsed;
 				a2.Visibility = Visibility.Collapsed;
+				e1.Visibility = Visibility.Collapsed;
+				b5.Visibility = Visibility.Collapsed;
+				c3.Visibility = Visibility.Collapsed;
+
+
 			}
 			if (RandomButton == 14)
 			{
 				b2.IsEnabled = false;
 				c2.IsEnabled = false;
+				g5.IsEnabled = false;
+				f4.IsEnabled = false;
+				f1.IsEnabled = false;
+				g5.Content = "30";
+				f4.Content = "31";
+				f1.Content = "32";
 				b2.Content = "28";
 				c2.Content = "29";
 				b2.Visibility = Visibility.Collapsed;
 				c2.Visibility = Visibility.Collapsed;
-			}
-			if (RandomButton == 15)
-			{
-				g5.IsEnabled = false;
-				f4.IsEnabled = false;
-				f1.IsEnabled = false;
-				e1.IsEnabled = false;
-				b5.IsEnabled = false;
-				c4.IsEnabled = false;
-				g5.Content = "30";
-				f4.Content = "31";
-				f1.Content = "32";
-				e1.Content = "33";
-				b5.Content = "34";
-				c3.Content = "35";
 				g5.Visibility = Visibility.Collapsed;
 				f4.Visibility = Visibility.Collapsed;
 				f1.Visibility = Visibility.Collapsed;
-				e1.Visibility = Visibility.Collapsed;
-				b5.Visibility = Visibility.Collapsed;
-				c3.Visibility = Visibility.Collapsed;
 			}
+		
 
 		}
 
@@ -719,6 +725,13 @@ namespace Project_obiektowe
 		// button - game fields(36 buttons)
 		private void a(object sender, RoutedEventArgs e)
 		{
+
+			if (zas == 0)
+			{
+				Randomdigit();
+				nextlab.Content = "";
+				DisableFields();
+			}
 			// sounds after click button 
 			SystemSounds.Asterisk.Play();
 
@@ -749,26 +762,27 @@ namespace Project_obiektowe
 			}
 			
 
+			
 			//show which button will be disabled
-			if (zas == 0 || zas == 3 || zas == 6 || zas == 9 || zas == 12 || zas == 15 || zas == 18 || zas == 21 || zas == 24)
+			if (zas == 0 || zas == 4 || zas == 8 || zas == 12 || zas == 16 || zas == 20 || zas == 24 || zas == 28 || zas == 30)
 			{
 				nextlab.Content = "";
 			}
 
 
-			if (zas == 1 || zas == 5 || zas == 9 || zas == 13 || zas == 17 || zas == 21 || zas == 25)
+			if (zas == 2 || zas == 6 || zas == 10 || zas == 14 || zas == 18 || zas == 22 || zas == 26)
 			{
 				Randomdigit();
 			}
 			// disable random button
 			// one per 4 turns 
-			if (zas == 2 || zas == 6 || zas == 10 || zas == 14 || zas == 18 || zas == 22 || zas == 26)
+			if (zas == 3 || zas == 7 || zas == 11 || zas == 15 || zas == 19 || zas == 23 || zas == 27)
 			{
 				Randomdigit1();
 			}
 			// disable random button
 			// one per 4 turns 
-			if (zas % 3 == 0)
+			if (zas % 4 == 0)
 			{
 				
 				DisableFields();
